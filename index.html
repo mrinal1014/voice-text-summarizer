@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- tsParticles CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.3.4/tsparticles.bundle.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice-Text Summarizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Particle Background and Animated Gradient Blur -->
+  <div id="particles-js"></div>
+  <div class="overlay-gradient"></div>
+  <div class="blur-layer"></div>
+
+  <header class="top-bar">
+    <h1>🎙️ Voice-Text Summarizer</h1>
+    <button id="themeToggle" title="Toggle Theme">🌓</button>
+  </header>
+
+  <section class="intro-banner">
+    <div class="intro-text">
+      <h2 class="typing" id="animatedIntro"></h2>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:mrinalsahoo25@gmail.com">✉️ Email</a>
+      <a href="https://github.com/mrinal1014" target="_blank">💻 GitHub</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <textarea id="inputText" placeholder="Type or speak your text here..."></textarea>
+
+    <div id="summaryBox">
+      <h3>Summary:</h3>
+      <p id="summaryOutput">Your summary will appear here.</p>
+    </div>
+
+    <div class="buttons">
+      <button id="startVoice"><span class="mic-icon">🎤</span> Speak</button>
+      <button id="summarizeBtn">🧠 Summarize</button>
+      <button id="speakBtn">🔈 Read Summary</button>
+      <button id="downloadBtn">⬇️ Download</button>
+    </div>
+  </main>
+
+  <div id="toastContainer"></div>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <p>© 2025 Mrinal Sahoo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
